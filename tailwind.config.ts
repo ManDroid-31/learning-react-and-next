@@ -1,17 +1,16 @@
-
 import { type Config } from "tailwindcss";
-import  fontFamily  from "tailwindcss/defaultTheme";
+import { fontFamily } from "tailwindcss/defaultTheme";
 import { withUt } from "uploadthing/tw";
 
 import animate from "tailwindcss-animate";
 
 export default withUt({
-  darkMode: ["class", '[data-theme="dark"]'],
+  darkMode: ["class"],
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)", ...fontFamily.fontFamily.sans],
+        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
