@@ -36,7 +36,8 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules","eslint", "eslint.config.js", "babel.config.js", "postcss.config.js", "tailwind.config.js", "webpack.config.js", "jest.config.ts", "jest.setup.ts", "vitest.setup.ts", ".turbo", ".turbo/**/*"]
 }
