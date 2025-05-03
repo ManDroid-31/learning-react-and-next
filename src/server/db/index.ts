@@ -11,6 +11,7 @@ import * as schema from "./schema";
  */
 const globalForDb = globalThis as unknown as {
   conn: Pool | undefined;
+  client: Client | undefined;
 };
 
 const conn = globalForDb.conn ?? createPool({
