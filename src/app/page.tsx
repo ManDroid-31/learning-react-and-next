@@ -26,7 +26,7 @@ export default function GoogleDriveClone() {
 
   const Breadcrumbs = useMemo(() => {
     const breadcrumbs = []
-    let currentId = currentFolder
+    let currentId: string | null = currentFolder
 
     while (currentId !== null) {
       const folder = mockFolders.find((file) => file.id === currentId)
